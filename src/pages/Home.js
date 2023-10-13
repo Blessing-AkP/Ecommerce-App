@@ -3,15 +3,38 @@ import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProducts from '../components/SpecialProducts';
+import Meta from '../components/Meta';
+
 
 
 const Home = () => {
   return (
     <>
+      <Meta title={"BgStore"} />
       <section className='home-wrapper-1 py-5'>
         <div className='container-xl'>
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-3 ps-0 pe-2'>
+                <div className='small-banner position-relative w-100 mb-2'>
+                <img src='images/catbanner-03.jpg' className='img-fluid rounded-3' alt='main-banner'/>
+                  <div className='small-banner-content position-absolute'>
+                    <h4>New Arival</h4>
+                    <h5>Buy Ipad Air</h5>
+                    <p>From 599 or <br />$49.91/mo.</p>
+                  </div>
+                </div>
+                <div className='small-banner position-relative w-100'>
+                <img src='images/catbanner-04.jpg' className='img-fluid rounded-3' alt='main-banner'/>
+                <div className='small-banner-content position-absolute'>
+                  <h4>Free Engraving</h4>
+                  <h5>Headset</h5>
+                  <p>High-fidelity sound &<br /> ultra-low distortion</p>
+                </div>
+                </div>
+            </div>
+
+            <div className='col-6 px-0'>
               <div className='main-banner position-relative'>
                 <img src='images/main-banner-1.jpg' className='img-fluid rounded-3' alt='main-banner'/>
                 <div className='main-banner-content position-absolute'>
@@ -22,42 +45,26 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='col-6'>
-              <div className='d-flex gap-10 flex-wrap justify-content-between align-items-center'>
-                <div className='small-banner position-relative'>
-                  <img src='images/catbanner-01.jpg' className='img-fluid rounded-3' alt='main-banner'/>
+
+            <div className='col-3 ps-2 pe-0'>              
+              <div className='small-banner position-relative w-100 mb-2'>
+                <img src='images/catbanner-02.jpg' className='img-fluid rounded-3' alt='main-banner'/>
+                <div className='small-banner-content position-absolute'>
+                  <h4>15% Off</h4>
+                  <h5>Smart Watch 7</h5>
+                  <p>Shope the latest <br />brands & styles</p>
+                </div>
+              </div>
+              <div className='small-banner position-relative w-100'>
+              <img src='images/catbanner-01.jpg' className='img-fluid rounded-3' alt='main-banner'/>
                   <div className='small-banner-content position-absolute'>
                     <h4>Best Sale</h4>
                     <h5>Laptop Max.</h5>
                     <p>From $1699.00 or<br /> $64.78/mo.</p>
                   </div>
-                </div>
-                <div className='small-banner position-relative'>
-                  <img src='images/catbanner-03.jpg' className='img-fluid rounded-3' alt='main-banner'/>
-                  <div className='small-banner-content position-absolute'>
-                    <h4>New Arival</h4>
-                    <h5>Buy Ipad Air</h5>
-                    <p>From 599 or <br />$49.91/mo.</p>
-                  </div>
-                </div>
-                <div className='small-banner position-relative'>
-                  <img src='images/catbanner-02.jpg' className='img-fluid rounded-3' alt='main-banner'/>
-                  <div className='small-banner-content position-absolute'>
-                    <h4>15% Off</h4>
-                    <h5>Smart Watch 7</h5>
-                    <p>Shope the latest <br />brands & styles</p>
-                  </div>
-                </div>
-                <div className='small-banner position-relative'>
-                  <img src='images/catbanner-04.jpg' className='img-fluid rounded-3' alt='main-banner'/>
-                  <div className='small-banner-content position-absolute'>
-                    <h4>Free Engraving</h4>
-                    <h5>Headset</h5>
-                    <p>High-fidelity sound &<br /> ultra-low distortion</p>
-                  </div>
-                </div>
               </div>
-            </div>
+          </div>
+
           </div>
         </div>
       </section>
@@ -194,8 +201,80 @@ const Home = () => {
               <h3 className='section-heading'>Featured Products</h3>
             </div>
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
+          </div>
+        </div>        
+      </section>
+      <section className='famous-wrapper py-5 home-wrapper-2'>
+        <div className='container-xl'>
+          <div className='row'>
+            <div className='col-3'>
+              <div className='famous-card position-relative pe-1'>
+                <img src='images/fam-7.jpg' className='img-fluid ' alt='famouse images'/>
+                <div className='famous-content position-absolute'>
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>From $399 or $16.62/mo for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative pe-1'>
+                <img src='images/fam-2.jpg' className='img-fluid ' alt='famouse images'/>
+                <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>Studio Display</h5>
+                <h6 className='text-dark'>600 nits of brightness</h6>
+                <p className='text-dark'>27 inch 5k retina display</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative pe-1'>
+                <img src='images/fam-10.jpg' className='img-fluid ' alt='famouse images'/>
+                <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>Smartphones</h5>
+                <h6 className='text-dark'>Smartphon 13 pro</h6>
+                <p className='text-dark'>Now in green from $999.00 <br/>or $41.32/mo for 24 mo footnote.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='col-3'>
+              <div className='famous-card position-relative pe-1'>
+                <img src='images/fam-15.jpg' className='img-fluid ' alt='famouse images'/>
+                <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>Home Speakers</h5>
+                <h6 className='text-dark'>Room-filling Sound</h6>
+                <p className='text-dark'>From $699.00 or $14.65/mo for 12 mo</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section className='specialprod-wrapper home-wrapper-2 py-5'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Special Products</h3>
+            </div>
+            <div className='row'>
+                  <SpecialProducts />
+                  <SpecialProducts />
+                  <SpecialProducts />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='popular-wrapper py-5 home-wrapper-2'>
+        <div className='container-xl'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Our Popular Products</h3>
+            </div>
             <ProductCard />
           </div>
         </div>        
@@ -242,10 +321,20 @@ const Home = () => {
             <div className='col-12'>
               <h3 className='section-heading'>Our Lattest Blog</h3>
             </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
             <BlogCard />
+            </div>
+            <div className="col-3">
             <BlogCard />
+            </div>
+            <div className="col-3">
             <BlogCard />
+            </div>
+            <div className="col-3">
             <BlogCard />
+            </div>
           </div>
         </div>        
       </section>
