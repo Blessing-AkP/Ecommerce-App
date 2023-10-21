@@ -9,6 +9,19 @@ import Contact from './pages/Contact';
 import OurStore from './pages/OurStore';
 import Blog from './pages/Blog';
 import CompareProducts from './pages/CompareProducts';
+import Wishlist from './pages/Wishlist';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
+import SingleBlog from './pages/SingleBlog';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import ShippingPolicy from './pages/ShippingPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import SingleProduct from './pages/SingleProduct';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 
@@ -21,9 +34,22 @@ function App() {
             <Route index element={<Home />}/>
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
-            <Route path='store' element={<OurStore />} />
+            <Route path='product' element={<OurStore />} />
+            <Route path='product/:id' element={<SingleProduct />} />
+            <Route path='checkout' element={<Checkout />} />
             <Route path='blog' element={<Blog />} />
+            <Route path='blog/:id' element={<SingleBlog />} />
+            <Route path='cart' element={<Cart />} />
             <Route path='compare-product' element={<CompareProducts />} />
+            <Route path='wishlist' element={<Wishlist />} />
+            <Route path='login' element={<Login />} />
+            <Route path='signup' element={<Signup />} />
+            <Route path='forgot-password' element={<ForgotPassword />} />
+            <Route path='reset-password' element={<ResetPassword />} />
+            <Route path='privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='shipping-policy' element={<ShippingPolicy />} />
+            <Route path='refund-policy' element={<RefundPolicy />} />
+            <Route path='Terms-conditions' element={<TermsAndConditions />} />
           </Route>
         </Routes>
       </BrowserRouter>

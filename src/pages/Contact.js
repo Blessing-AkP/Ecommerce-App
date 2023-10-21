@@ -3,7 +3,7 @@ import Meta from '../components/Meta';
 import BreadCrump from '../components/BreadCrump';
 import {IoHome, IoMailSharp} from 'react-icons/io5';
 import {BiSolidPhoneCall } from 'react-icons/bi';
-import {BsInfoLg } from 'react-icons/bs';
+import {BsInfoCircleFill } from 'react-icons/bs';
 
 const Contact = () => {
   return (
@@ -69,7 +69,7 @@ const Contact = () => {
                     blessbgstore@gmail.com
                     </a>
                     </li>
-                    <li className='d-flex gap-15 align-items-center mb-4'><BsInfoLg className='contact-icon'/>
+                    <li className='d-flex gap-15 align-items-center mb-4'><BsInfoCircleFill className='contact-icon'/>
                     <p className='mb-0'> Monday - Friday 8 AM - 5 PM</p>
                       </li>
                   </ul>

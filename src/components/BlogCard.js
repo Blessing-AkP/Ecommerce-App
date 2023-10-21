@@ -13,7 +13,7 @@ const BlogCard = () => {
                 <p className='desc'>
                 Join us on a journey as we explore the magic of beautiful Sunday mornings.
                 </p>
-                <Link to='/' className='button' >Read More</Link>
+                <Link to=':id' className='button' >Read More</Link>
             </div>
         </div>
   )

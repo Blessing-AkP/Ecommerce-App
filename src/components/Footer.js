@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {BsLinkedin, BsYoutube, BsGithub, BsInstagram} from 'react-icons/bs';
+import newsletter from "../images/newsletter.png"
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className='row align-items-center'>
           <div className='col-5'>
             <div className='footer-top-data d-flex align-items-center gap-30'>
-              <img src='images/newsletter.png' alt='newsletter' />
+              <img src={newsletter} alt='newsletter' />
               <h2 className='mb-0 text-white'>
                 Sign Up for Newsletter
               </h2>
@@ -56,19 +57,19 @@ const Footer = () => {
           <div className='col-3'>
             <h4 className='text-white mb-4'>Information</h4>
             <div className='footer-link d-flex flex-column'>
-              <Link className='text-white py-2 mb-1' to='#'>Priacy Policy</Link>
-              <Link className='text-white py-2 mb-1' to='#'>Shipping Policy</Link>
-              <Link className='text-white py-2 mb-1' to='#'>Refund Policy</Link>
-              <Link className='text-white py-2 mb-1' to='#'>Terms of Service</Link>
-              <Link className='text-white py-2 mb-1' to='#'>Blog</Link>
+              <Link className='text-white py-2 mb-1' to='/privacy-policy'>Privacy Policy</Link>
+              <Link className='text-white py-2 mb-1' to='/shipping-policy'>Shipping Policy</Link>
+              <Link className='text-white py-2 mb-1' to='/refund-policy'>Refund Policy</Link>
+              <Link className='text-white py-2 mb-1' to='/terms-conditions'>Terms of Service</Link>
+              <Link className='text-white py-2 mb-1' to='/blog'>Blog</Link>
             </div>
           </div>
           <div className='col-3'>
             <h4 className='text-white mb-4'>Account</h4>
             <div className='footer-link d-flex flex-column'>
-              <Link className='text-white py-2 mb-1' to='#'>About Us</Link>
+              <Link className='text-white py-2 mb-1' to='/about'>About Us</Link>
               <Link className='text-white py-2 mb-1' to='#'>FAQs</Link>
-              <Link className='text-white py-2 mb-1' to='#'>Contact</Link>
+              <Link className='text-white py-2 mb-1' to='/contact'>Contact</Link>
             </div>
           </div>
           <div className='col-2'>
@@ -88,7 +89,7 @@ const Footer = () => {
         <div className='row'>
           <div className='col-12'>
             <p className='text-center text-white mb-0'>
-              &copy {new Date().getFullYear()} Powered By BgStore
+              &copy; {new Date().getFullYear()} Powered By BgStore
             </p>
           </div>
         </div>
