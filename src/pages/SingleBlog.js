@@ -7,6 +7,7 @@ import {BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 import blog1 from "../images/blog-1.jpg";
 import mainBanner from "../images/main-banner.jpg";
 import mainBanner1 from "../images/main-banner-1.jpg";
+import Container from '../components/Container';
 
 
 const SingleBlog = () => {
@@ -14,8 +15,7 @@ const SingleBlog = () => {
     <>
         <Meta title={"BgStore | Dynamic Blog Name"} />
         <BreadCrump title="Dynamic Blog Name" />
-        <div className='blog-wrapper py-5 home-wrapper-2'>
-            <div className='container-xl'>
+        <Container class1='blog-wrapper py-5 home-wrapper-2'>
                 <div className='row' >
                     <div className='col-4'>
                         <div className='filter-card mb-3'>
@@ -105,8 +105,7 @@ const SingleBlog = () => {
                         {/* -----------Form End------------ */}
                     </div>
                 </div>
-            </div>
-        </div>
+        </Container>
     </>
   )
 }
